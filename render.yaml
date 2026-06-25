@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: libretranslate
+    runtime: docker
+    plan: free
+    autoDeploy: true
