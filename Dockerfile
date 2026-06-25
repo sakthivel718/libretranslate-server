@@ -1,3 +1,4 @@
 FROM libretranslate/libretranslate:latest
 
-CMD ["sh", "-c", "libretranslate --host 0.0.0.0 --port ${PORT:-5000}"]
+EXPOSE 5000
+CMD ["--host", "0.0.0.0", "--port", "5000"]
